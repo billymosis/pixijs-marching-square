@@ -5,6 +5,11 @@ import { generate2dArray } from "./utils";
 import { Circle } from "./circle";
 import { RectText } from "./cell";
 
+const base = document.createElement("base");
+// @ts-ignore
+base.setAttribute("href", import.meta.env.BASE_URL);
+document.head.insertBefore(base, document.head.firstChild);
+
 class Main {
   pane = new Pane();
   app = new Application();
