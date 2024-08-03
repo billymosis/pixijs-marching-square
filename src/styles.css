@@ -1,4 +1,14 @@
+html {
+  height: 100%;
+}
 body {
   margin: 0;
+  min-height: 100%;
   overflow: hidden;
+  display: flex;
+}
+
+#pixi-container {
+  width: 100%;
+  min-height: 100%;
 }

@@ -14,7 +14,16 @@ importers:
       stats.js:
         specifier: ^0.17.0
         version: 0.17.0
+      tweakpane:
+        specifier: ^4.0.4
+        version: 4.0.4
     devDependencies:
+      '@tweakpane/core':
+        specifier: ^2.0.4
+        version: 2.0.4
+      '@types/stats.js':
+        specifier: ^0.17.3
+        version: 0.17.3
       typescript:
         specifier: ^5.2.2
         version: 5.5.4
@@ -245,6 +254,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@tweakpane/core@2.0.4':
+    resolution: {integrity: sha512-0P3xcmvjBr8AmqMOEDNYIbkiaPwvQPkj8VeJX+8ZYkpRgWWbNp1HLbld0MDI0WJHdom89osH3MmCDLnWEXKI2w==}
+
   '@types/css-font-loading-module@0.0.12':
     resolution: {integrity: sha512-x2tZZYkSxXqWvTDgveSynfjq/T2HyiZHXb00j/+gy19yp70PHCizM48XFdjBCWH7eHBD0R5i/pw9yMBP/BH5uA==}
 
@@ -253,6 +265,9 @@ packages:
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
+
+  '@types/stats.js@0.17.3':
+    resolution: {integrity: sha512-pXNfAD3KHOdif9EQXZ9deK82HVNaXP5ZIF5RP2QG6OQFNTaY2YIetfrE9t528vEreGQvEPRDDc8muaoYeK0SxQ==}
 
   '@webgpu/types@0.1.44':
     resolution: {integrity: sha512-JDpYJN5E/asw84LTYhKyvPpxGnD+bAKPtpW9Ilurf7cZpxaTbxkQcGwOd7jgB9BPBrTYQ+32ufo4HiuomTjHNQ==}
@@ -309,6 +324,9 @@ packages:
 
   stats.js@0.17.0:
     resolution: {integrity: sha512-hNKz8phvYLPEcRkeG1rsGmV5ChMjKDAWU7/OJJdDErPBNChQXxCo3WZurGpnWc6gZhAzEPFad1aVgyOANH1sMw==}
+
+  tweakpane@4.0.4:
+    resolution: {integrity: sha512-RkWD54zDlEbnN01wQPk0ANHGbdCvlJx/E8A1QxhTfCbX+ROWos1Ws2MnhOm39aUGMOh+36TjUwpDmLfmwTr1Fg==}
 
   typescript@5.5.4:
     resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
@@ -464,11 +482,15 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.19.1':
     optional: true
 
+  '@tweakpane/core@2.0.4': {}
+
   '@types/css-font-loading-module@0.0.12': {}
 
   '@types/earcut@2.1.4': {}
 
   '@types/estree@1.0.5': {}
+
+  '@types/stats.js@0.17.3': {}
 
   '@webgpu/types@0.1.44': {}
 
@@ -558,6 +580,8 @@ snapshots:
   source-map-js@1.2.0: {}
 
   stats.js@0.17.0: {}
+
+  tweakpane@4.0.4: {}
 
   typescript@5.5.4: {}
 

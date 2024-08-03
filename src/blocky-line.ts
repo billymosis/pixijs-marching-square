@@ -1,6 +1,6 @@
 import { Graphics } from "pixi.js";
 
-export function drawRect(int: number, l: Graphics, squareWidth: number) {
+export function drawBlockyLine(int: number, l: Graphics, squareWidth: number) {
   const half = squareWidth / 2;
 
   switch (int) {

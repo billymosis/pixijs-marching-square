@@ -9,11 +9,14 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@tweakpane/core": "^2.0.4",
+    "@types/stats.js": "^0.17.3",
     "typescript": "^5.2.2",
     "vite": "^5.3.4"
   },
   "dependencies": {
     "pixi.js": "^8.2.5",
-    "stats.js": "^0.17.0"
+    "stats.js": "^0.17.0",
+    "tweakpane": "^4.0.4"
   }
 }

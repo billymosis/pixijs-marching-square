@@ -1,5 +1,5 @@
 import { Graphics } from "pixi.js";
-import { lerp, lerp2 } from "./utils";
+import { lerp2 } from "./utils";
 
 type Params = {
   l: Graphics;
@@ -21,15 +21,14 @@ export function drawInterpolatedLine({
   sw,
 }: Params) {
   let squareWidth = _squareWidth;
-  const a = linearInterpolation(nw, ne, 0, squareWidth, 1);
-  const b = linearInterpolation(ne, se, 0, squareWidth, 1);
-  const c = linearInterpolation(sw, se, 0, squareWidth, 1);
-  const d = linearInterpolation(nw, sw, 0, squareWidth, 1);
+  const a = lerp2(nw, ne, 0, squareWidth, 1);
+  const b = lerp2(ne, se, 0, squareWidth, 1);
+  const c = lerp2(sw, se, 0, squareWidth, 1);
+  const d = lerp2(nw, sw, 0, squareWidth, 1);
 
   switch (int) {
     case 0: // 0000
     case 15: // 1111
-      // Do nothing or potentially draw a full square
       break;
     case 14: // 1110
     case 1: // 0001
@@ -77,16 +76,3 @@ export function drawInterpolatedLine({
       console.warn(`Unexpected int value: ${int}`);
   }
 }
-
-export const linearInterpolation = (
-  x0: number,
-  x1: number,
-  y0: number,
-  y1: number,
-  x: number,
-) => {
-  if (x0 === x1) {
-    return 0;
-  }
-  return y0 + ((y1 - y0) * (x - x0)) / (x1 - x0);
-};
